@@ -1,0 +1,150 @@
+  body{
+    background:none;
+  }
+  /*Logo特效*/
+  .上線{
+        position: relative;
+        opacity: 0.0;
+        background: #fff;
+        width: 150px;
+        top:100px;
+        margin: 0px auto 0;
+        height: 3px;
+        animation-name: one;
+        animation-duration: 1s;
+        animation-delay: 1.5s;
+        animation-fill-mode: forwards;
+        z-index: 12
+       
+    }
+    @keyframes one{
+        from{
+            opacity: 0.0;
+            width:20px;
+            
+            
+        }
+        to{
+            opacity: 1.0;
+           width:150px;
+            
+            
+        }
+    }
+    .logo文字{
+        color: #fff;
+        font-family: "標楷體";
+        font-size: 14px;
+        top:100px;
+        margin:0px auto 0;
+        animation-name: two;
+        animation-duration: 1s;
+        position: relative; 
+        animation-fill-mode: forwards;       
+    }
+    @keyframes two {
+        from{
+            opacity: 0.0;
+        
+        }
+        to{
+            opacity: 1.0;
+            
+        }
+    }
+.下線{
+        opacity: 0.0;
+        position: relative;
+        animation-delay: 2s;
+        background: #fff;
+        width: 150px;
+        top:100px;
+        margin: 0px auto 0;
+        height: 3px;
+        animation-name: three;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+       
+    }
+    @keyframes three{
+          from{
+            opacity: 0.0;
+            width:20px;
+                      
+        }
+        to{
+            opacity: 1.0;
+           width:150px;
+                        
+        }
+    }
+    .框{
+        height: 500px;
+        width:100%;
+        background:     #BBFFFF;
+        position: relative;
+        animation-name: fore;
+        animation-duration: 5s;
+        background: #5CADAD ;
+        animation-fill-mode: forwards;
+    }
+    @keyframes fore{
+        0%{opacity:0.0;}
+        100%{opacity: 1.0;}
+    }
+    .英文logo文字{
+        top: 100px;
+        opacity: 1.0;
+        position: relative;
+        font-size: 15px;
+        color:#fff;
+        animation-name: fire;
+        font-family: "Arial Black";
+   
+    }
+
+
+ 
+ /*視差效果*/
+   .專題main {
+       width: 100%;
+        margin:0 auto;
+       height: 400px;
+       padding:40px;
+       font: 15px 'Arial';
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-position: center center;
+       background-size: cover;
+       line-height:20px;
+   }
+   
+   .背景1 {
+        
+        width:100%;
+        padding:20px;
+       color: #fff;
+       background-image: url(../img/green.jpg);
+  
+     
+   }
+   
+   
+   
+   .背景2 {
+        
+        width:100%;
+        padding:20px;
+       color: #fff;
+       background-image: url(../img/紫色.jpg);
+   
+   }
+   
+
+   .背景3 {
+       
+        width:100%;
+        padding:20px;
+       color: #fff;
+       background-image: url(../img/背景三.jpg);
+   }

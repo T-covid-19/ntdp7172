@@ -1,0 +1,78 @@
+html body{
+	overflow-x:hidden;
+	background:#fff;
+	margin:0px;
+	z-index: 15;
+}
+.bb{
+	background: #333;
+	animation-duration:3s; 
+	animation-name:bb;
+	width: 50%;
+	height:400px;
+	position: relative;
+	top:0px;
+    z-index: 10;
+    opacity: 0.9;
+    animation-fill-mode:forwards;
+    z-index: 5;
+}
+
+@keyframes bb{
+	0%{left:-10%;width:0%}
+100%{left:0%;width: 50%}
+}
+.b1{
+	height:400px;
+	width: 100%;
+
+	background: url(../img/門牌.jpg);
+	opacity: 0.7;
+	z-index: 3;
+	padding-bottom:30%;
+	-webkit-background-size:cover;
+	background-size: cover;
+
+	
+}
+.bbb{
+	z-index: 15;
+	color: #333;
+	animation-delay: 3s;
+	animation-duration: 3s;
+	animation-name:bbb;
+	animation-fill-mode:forwards;
+	font-family: "標楷體"
+	
+}
+@keyframes bbb{
+	0%{opacity: 0.0;top:50%;color: #333}
+	100%{opacity: 1.0;top:0%;color: #fff}
+}
+.sss{
+	position: relative;
+
+ width:50%;height:100px;
+ 
+ border-right: 150px solid ;
+ border-left:500px solid transparent  ;
+ border-top:300px solid   ;
+ animation-duration:3s;
+ animation-name:sss;
+ animation-fill-mode:forwards;
+
+}
+@keyframes sss{
+	0%{left:40%;width:-10%}
+100%{left:0%;width:100%}
+}
+
+.yyy{
+	/*border-top-left-radius - 設定左上角
+border-top-right-radius - 設定右上角
+border-bottom-right-radius - 設定右下角
+border-bottom-left-radius - 設定左下角*/
+width: 100px;
+height:100px;
+	border-radius: 100px;
+}

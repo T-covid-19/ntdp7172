@@ -1,0 +1,94 @@
+/*翻牌效果*/
+ body,div{margin:0px;padding:0px;}
+     .flip_wrap{
+          width:500px;
+          height:450px;
+          margin:0px auto 0;
+          perspective:800px;/*perspective属性定义3D元素距视图的距离,以像素计。该属性允许您改变 3D 元素查看 3D 元素的视图。*/
+          -webkit-perspective:800px;
+          -moz-perspective:800px;
+          -ms-perspective:800px;
+          -o-perspective:800px;
+          }
+     .flip{
+          width:100%;
+          height:100%;
+          backface-visibility:hidden;/*背对屏幕时隐藏*/
+          -webkit-backface-visibility:hidden;
+          -moz-backface-visibility:hidden;
+          -ms-backface-visibility:hidden;
+          -o-backface-visibility:hidden;
+          transition: all 1s ease; /*为翻牌添加过渡效果*/
+          -webkit-transition: all 1s ease;
+          -moz-transition: all 1s ease;
+          -ms-transition: all 1s ease;
+          -o-transition: all 1s ease;
+            transform-style: preserve-3d; /*子元素将保留其 3D 位置。*/
+     }
+     .side{
+          width:100%;
+          height:100%;
+          position: absolute;/*让背面和正面重叠*/
+          left:40%;
+          margin-left:-40%;
+     }
+     .front{
+          z-index:2;/*让正面朝上*/
+     }
+     .back{
+          transform:rotateY(180deg);
+          -webkit-transform:rotateY(180deg);
+          -moz-transform:rotateY(180deg);
+          -ms-transform:rotateY(180deg);
+          -o-transform:rotateY(180deg);
+     }
+     .flip_wrap:hover .flip{
+      transition-delay: 0.2s;
+          transform:rotateY(180deg);(180);
+          -webkit-transform:rotateY(180deg);
+          -moz-transform:rotateY(180deg);
+          -ms-transform:rotateY(180deg);
+          -o-transform:rotateY(180deg);
+     }
+   .textAlign{
+    text-align:center;
+   }
+   .flip .side{
+    
+   }
+   .flip .side img{
+    width: 100%;
+    border-radius: 5px;
+   }
+
+/*tnvr內文*/
+  .p1{
+    font-size: 20px;
+    font:#fff;
+    font-family: "標楷體"
+  }
+.tnvr-main {
+       width: 100%;
+        margin:0 auto;
+       height: 400px;
+       padding:40px;
+       font: 15px 'Arial';
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-position: center center;
+       background-size: cover;
+       line-height:20px;
+   }
+   
+   .背景1 {
+        height: 750px;
+        padding:70px;
+  
+     
+   }
+   .背景2 {
+        height: 900px;
+        padding:70px;
+  
+     
+   }

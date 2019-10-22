@@ -1,0 +1,183 @@
+html body{
+	overflow-x:hidden;
+	
+	
+	z-index: 15;
+}
+/*以下推動動畫*/
+.左{
+	background: #333;
+	animation-duration:3s; 
+	animation-name:aleft;
+	width: 35%;
+	height:400px;
+	position: relative;
+	top:0px;
+    z-index: 10;
+    opacity: 0.9;
+    animation-fill-mode:forwards;
+    
+}
+
+@keyframes aleft{
+	0%{left:0%;width:15%}
+100%{left:0%;width: 33%}
+}
+
+.右{
+	background: #333;
+	animation-duration:5s; 
+	animation-name:aright;
+	width: 30%;
+	height:400px;
+	
+	position: relative;
+	top:0px;
+    z-index: 10;
+    opacity: 0.9;
+    animation-fill-mode:forwards;
+    z-index: 5;
+}
+
+@keyframes aright{
+	0%{right:-70%;width:30%}
+100%{right: -60%;width: 40%}
+}
+/*以上推動動畫*/
+
+/*以下底圖*/
+.圖1{
+
+	height: 400px;
+	background: url(../img/10.jpg);
+	opacity: 0.7;
+	z-index: 3;
+	
+	-webkit-background-size:cover;
+	background-size: cover;
+
+	
+}
+.圖2{
+	height:400px;
+	width: 100%;
+
+	background: url(../img/門牌.jpg);
+	opacity: 0.7;
+	z-index: 3;
+	
+	-webkit-background-size:cover;
+	background-size: cover;
+
+	
+}
+.圖3{
+	height:400px;
+	width: 100%;
+
+	background: url(../img/貓10.jpg);
+	opacity: 0.7;
+	z-index: 3;
+	
+	-webkit-background-size:cover;
+	background-size: cover;
+
+	
+}
+.圖4{
+	height:400px;
+	width: 100%;
+
+	background: url(../img/貓6.jpg);
+	opacity: 0.7;
+	z-index: 3;
+	
+	-webkit-background-size:cover;
+	background-size: cover;
+
+	
+}
+.圖5{
+	height:400px;
+	width: 100%;
+
+	background: url(../img/狗1.jpg);
+	opacity: 0.7;
+	z-index: 3;
+	
+	-webkit-background-size:cover;
+	background-size: cover;
+
+	
+}
+.圖6{
+	height:400px;
+	width: 100%;
+
+	background: url(../img/20.jpg);
+	opacity: 0.7;
+	z-index: 3;
+	
+	-webkit-background-size:cover;
+	background-size: cover;
+
+	
+}
+/*以上底圖*/
+
+
+/*區塊*/
+.區塊{
+	position: relative;
+	opacity: 1.0;
+	
+}
+.區塊:hover{
+			animation-name: aa;
+			animation-duration: 3s;
+			opacity: 0.0;
+			animation-fill-mode:forwards;
+			
+			
+
+		}
+		@keyframes aa{
+			0%{top:100px;opacity: 0.0;}
+			100%{top:0px;opacity: 1.0;}
+		}
+
+/* 方法一 .區塊:hover .左{
+  display:block;
+		}
+.左{
+	 display:none;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+.文字{
+	height: 300px;
+
+	z-index: 15;
+	color: #333;
+	animation-delay: 3s;
+	animation-duration: 3s;
+	animation-name:bbb;
+	animation-fill-mode:forwards;
+	font-family: "標楷體"
+	
+}
+@keyframes bbb{
+	0%{opacity: 0.0;top:50%;color: #333}
+	100%{opacity: 1.0;top:0%;color: #fff}
+}

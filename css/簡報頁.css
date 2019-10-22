@@ -1,0 +1,53 @@
+body {
+            background: url(../img/bd3.jpg) center center fixed no-repeat opacity: 0.5;
+            background-size: cover;
+        }
+        
+        .main {
+            width: 900px;
+            margin: 10% auto;
+            background-color: #fff;
+            
+        }
+        
+        .main h1 {
+           
+            font-family: "微軟正黑體";
+            font-size: 26px;
+           
+           height: 100px;
+            padding: 40px 40px 0px 180px;
+            font-weight: bold;
+background-image: url(../img/title.png);
+background-repeat: no-repeat;
+
+        }
+        
+        .main h2 {
+            font-size: 20px;
+            padding: 20px 0px 0px 20px;
+            font-family: "微軟正黑體";
+            font-weight: bold;
+            margin: 0px;
+        }
+        
+        .main p {
+            font-size: 15px;
+        
+            font-family: "微軟正黑體";
+         
+           
+        }
+        .main .p1 {
+            font-size: 0px;
+            font-family: "微軟正黑體";
+            animation-delay: 3s;
+            animation-duration: 3s;
+            animation-name: pp;
+            animation-fill-mode:forwards;
+            padding: 18px;
+        }
+        @keyframes pp{
+            0%{font-size:15px;}
+            100%{font-size: 15px;}
+            }
